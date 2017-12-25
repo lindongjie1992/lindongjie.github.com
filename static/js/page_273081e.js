@@ -1,0 +1,1 @@
+function textHide(){$(".page-cont").css({height:1017,overflow:"hidden"}),$(".text-mask").show()}function textShow(){$(".page-cont").removeAttr("style"),$(".text-mask").hide()}

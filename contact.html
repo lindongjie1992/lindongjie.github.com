@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="开彩游戏">
+    <meta name="author" content="开彩游戏">
+    <title>开彩游戏</title>
+    <link rel="stylesheet" href="/static/css/reset_397032b.css">
+    <link rel="stylesheet" href="/static/css/style_9d4f4fd.css">
+    <link rel="stylesheet" href="/static/css/swiper.min_c1e7355.css">
+    <script src="/static/js/jquery_976fbd8.js"></script>
+    <script src="/static/js/jquery.lazyload_75578ef.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=12ac40721a2709c60c13b50de29c21d7"></script>
+</head>
+
+<body>
+    <!-- 头部开始 -->
+    <div id="header">
+        <div class="layout">
+            <a class="logo" href="index.html" title="开彩游戏">
+                <img src="/static/img/logo_9d9242c.png" alt="">
+            </a>
+            <ul class="menu clearfix">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="ddz.html">游戏介绍</a></li>
+                <li><a href="news.html">游戏资讯</a></li>
+                <li><a href="pay.html">充值中心</a></li>
+                <li><a href="parent.html">未成年人家长监护</a></li>
+                <li class="active"><a href="contact.html">关于我们</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 头部结束 -->
+
+    <!-- banner开始 -->
+    <div class="page-banner" style="background:url(/static/img/page-banner.jpg) center top no-repeat;"></div>
+    <!-- banner结束 -->
+
+    <!-- 主体样式开始 -->
+    <div class="page-main layout clearfix">
+        <div class="concat">
+            <h2 class="tt">关于我们</h2>
+            <p class="cont">
+                深圳市开彩传媒有限公司是一家创新型传媒企业，2017年注册成立于深圳前海自贸区，注册资本壹千万元。是一家专注移动端手游开发、运营和销售的互联网公司,旗下的
+                开彩游戏致力于成为中国出色的地方棋牌互动娱乐品牌。我们拥有一批经验丰富的自主研发团队，坚持地域性多样化的产品线，向用户提供各类高端趣味性手机游戏，
+                以立足地方特色，潜心本地化为目标，成为棋牌手游的领导者。
+            </p>
+            <div id="container" style="width:100%; height:600px; margin:30px 0;"></div>
+            <p class="info">
+                地址：深圳市福田区泰然四路创新科技广场一期A座1306<br/>
+                电话：0755-23961365<br/>
+                邮箱：kaicaichuanmei@126.com
+            </p>
+        </div>
+    </div>
+    <!-- 主体样式结束 -->
+
+
+    <!-- 底部开始 -->
+    <div id="footer">
+        <div class="layout clearfix">
+            <div class="footer-left">
+                <div class="concat">
+                    <span>客服电话&nbsp;&nbsp;&nbsp;400-0188-365</span>
+                    <span>联系我们&nbsp;&nbsp;&nbsp;0755-23961365</span>
+                    <span>客服邮箱&nbsp;&nbsp;&nbsp;kaicaichuanmei@126.com</span>
+                </div>
+                <div class="advice clearfix">
+                    <em>健康游戏忠告：</em>
+                    <span>
+                        抵制不良游戏&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;拒绝盗版游戏&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注意自我保护&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;谨防受骗上当<br><br><br>
+                        适度游戏益脑&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;沉迷游戏伤身&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;合理安排时间&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;享受健康生活
+                    </span>
+                </div>
+                <div class="copyright">
+                        深圳市开彩传媒有限公司 版权所有 © 2016-2017&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">粤ICP备17128176号-1</a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="qrcode fl">
+                    <h2>微信公众号</h2>
+                    <img src="/static/img/qrcode1.jpg" alt="">
+                </div>
+                <div class="qrcode fr">
+                    <h2>微信公众号</h2>
+                    <img src="/static/img/qrcode2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部结束 -->
+    <script src="/static/js/swiper.min_afd400b.js"></script>
+    <script src="/static/js/page_273081e.js"></script>
+    <script type="text/javascript"> 
+        // 百度地图API功能
+        var map = new BMap.Map("container");    // 创建Map实例
+        var point = new BMap.Point(114.03777,22.539763);
+        map.centerAndZoom(point, 20);  // 初始化地图,设置中心点坐标和地图级别
+        var marker = new BMap.Marker(point);  // 创建标注
+        map.addOverlay(marker);
+        marker.setAnimation(BMAP_ANIMATION_BOUNCE);
+        //添加地图类型控件
+        map.addControl(new BMap.MapTypeControl({
+            mapTypes:[
+                BMAP_NORMAL_MAP,
+                BMAP_HYBRID_MAP
+            ]}));	  
+        map.setCurrentCity("深圳"); // 设置地图显示的城市 此项是必须设置的
+        map.enableScrollWheelZoom(false);//开启鼠标滚轮缩放
+    </script>  
+<script type="text/javascript" charset="utf-8" src="http://192.168.1.188:8134/livereload.js"></script></body>
+
+</html>
